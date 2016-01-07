@@ -1,5 +1,7 @@
 # LyX tutorial 
 
+![Cover](https://raw.githubusercontent.com/petteriTeikari/lyxTemplate/master/figures/cover.png)
+
 Modified from Francois Pitt's LyX template that conform the guidelines of the School of Graduate Studies at the University of
 Toronto (as of 2008).  [http://www.sgs.utoronto.ca/informationfor/+
 students/finup/producingthesis/formatting.htm]
