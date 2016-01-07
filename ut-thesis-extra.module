@@ -1,0 +1,90 @@
+#\DeclareLyXModule[bibentry.sty,caption.sty,dcolumn.sty,prettyref.sty]{Thesis customizations}
+#DescriptionBegin
+#Personal customization to the thesis class.
+#DescriptionEnd
+
+# Author: Julien Rioux <jrioux@lyx.org>
+
+Format 35
+
+AddToPreamble
+\usepackage{bibentry} % added by ut-thesis-extra.module
+\usepackage{caption}
+\usepackage{dcolumn}
+\usepackage{prettyref}
+
+
+% align on decimal
+\newcolumntype{d}{D{.}{.}{-1}}
+
+% custom hyphenation patterns
+\hyphenation{cen-tro-sym-me-tric gra-phe-ne photo-ex-ci-ted pseu-do-ten-sor wave-vec-tor}
+
+% linebreak in title on abstract page
+\newcommand{\titlebreak}{}
+
+% center all floats
+\g@addto@macro\@floatboxreset\centering
+
+% small text all floats and captions
+\g@addto@macro\@floatboxreset\small
+\captionsetup[figure]{font=small,labelfont=sc}
+\captionsetup[table]{font=small,labelfont=sc}
+
+% spacing for multline equations
+\setlength{\multlinegap}{2cm}
+\setlength{\multlinetaggap}{1cm}
+
+% prettyref formats thesis style
+\AtBeginDocument{\renewcommand{\eqref}[1]{\hyperref[#1]{(\ref*{#1})}}}
+\newrefformat{chap}{Chapter~\hyperref[#1]{\ref*{#1}}}
+\newrefformat{eq}{Equation~\hyperref[#1]{(\ref*{#1})}}
+\newrefformat{eqs}{Equations~\hyperref[#1]{(\ref*{#1})}}
+\newrefformat{equation}{Equation~\hyperref[#1]{(\ref*{#1})}}
+\newrefformat{figure}{Figure~\hyperref[#1]{\ref*{#1}}}
+\newrefformat{subfiga}{Figure~\hyperref[#1]{\ref*{#1}(a)}}
+\newrefformat{subfigb}{Figure~\hyperref[#1]{\ref*{#1}(b)}}
+\newrefformat{subfigc}{Figure~\hyperref[#1]{\ref*{#1}(c)}}
+\newrefformat{subfigd}{Figure~\hyperref[#1]{\ref*{#1}(d)}}
+\newrefformat{subfigab}{Figure~\hyperref[#1]{\ref*{#1}(a,b)}}
+\newrefformat{subfigcd}{Figure~\hyperref[#1]{\ref*{#1}(c,d)}}
+\newrefformat{tab}{Table~\hyperref[#1]{\ref*{#1}}}
+
+% no links in \citeauthor command
+\newcommand{\nolinks}{%
+\renewcommand{\hyper@natlinkstart}[1]{}%
+\renewcommand{\hyper@natlinkend}{}%
+\renewcommand{\hyper@natlinkbreak}[2]{##1}%
+}
+\DeclareRobustCommand\citeauthor
+   {\begingroup\nolinks\NAT@swafalse\let\NAT@ctype\@ne\NAT@parfalse
+    \@ifstar{\NAT@fulltrue\NAT@citetp}{\NAT@fullfalse\NAT@citetp}}
+
+% fix the bibentry package
+\def\BR@c@bibitem#1 #2\BibitemShut#3{{\let\protect\@unexpandable@protect
+      \expandafter \gdef\csname BR@r@#1\@extra@b@citeb\endcsname
+      {\BR@nodot#2\relax.\relax\relax}}}
+\nobibliography*
+
+% bibentry with short author list and no title or note
+\DeclareRobustCommand\citealt
+   {\@ifstar{\NAT@fulltrue\cite@lt}{\NAT@fullfalse\cite@lt}}
+\def\cite@lt#1{%
+    \begingroup%
+    \let\@bib@Yauthor\@gobble%
+    \let\@bib@Ynote\@gobble%
+    \let\@bib@Ytitle\@gobble%
+    %---the key was #1---%
+    \ifNAT@full\citeauthor*{#1}\else\citeauthor{#1}\fi, \bibentry{#1}%
+    \endgroup%
+}
+
+% headers
+\def\chaptermark#1{\markright{\textsc{\@chapapp~\thechapter.}~~~#1}}
+\def\bibpreamble{\markright{\textsc{\bibname}}}
+
+% one-and-a-half spacing in the bibliography
+\def\bibfont{\linespacing{1.33}}
+EndPreamble
+
+TitleLatexName    maketitle\renewcommand{\titlebreak}{\linebreak[4]}

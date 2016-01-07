@@ -1,0 +1,2538 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass ut-thesis
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\branch literature
+\selected 1
+\filename_suffix 0
+\color #f9f7f3
+\end_branch
+\branch comments
+\selected 1
+\filename_suffix 0
+\color #f9f7f3
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Software setup
+\end_layout
+
+\begin_layout Enumerate
+Install LyX with the MikTeX bundle (especially if you don't know what that
+ means, as the MikTeX install TeX and LaTeX macro extensions)
+\end_layout
+
+\begin_layout Enumerate
+If you are using Zotero, install LyZ to your Firefox as well
+\end_layout
+
+\begin_layout Enumerate
+Configure the LyX pipes for both LyX and LyZ, see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Setting-the-LyX"
+
+\end_inset
+
+ for Ubuntu/Mac.
+ If you are using windows use 
+\noun on
+
+\backslash
+
+\backslash
+.
+\backslash
+pipe
+\backslash
+lyxpipe
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/lyxPipe.png
+	lyxscale 50
+	width 70col%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Setting the LyX pipes to LyXServer.
+ 
+\series bold
+(top-left) 
+\series default
+LyX : Tools - Preferences - Paths, and after change do Tools - Reconfigure.
+ 
+\series bold
+(top-right) 
+\series default
+LyZ configuration from 
+\series bold
+(bottom) 
+\series default
+clicking LyZ icon and clicking Settings there.
+ Replace both paths with 
+\begin_inset Quotes eld
+\end_inset
+
+
+\noun on
+
+\backslash
+
+\backslash
+.
+\backslash
+pipe
+\backslash
+lyxpipe
+\noun default
+
+\begin_inset Quotes erd
+\end_inset
+
+ if you are using Windows use (for details see: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://addons.mozilla.org/en-US/firefox/addon/lyz/"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://wiki.lyx.org/LyX/LyXServer"
+
+\end_inset
+
+).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Setting-the-LyX"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Some tutorials and resources
+\end_layout
+
+\begin_layout Subsection
+The LyX Tutorial - by Amir Karger and the LyX Team 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.fnal.gov/docs/products/lyx/Tutorial.tex.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This file is designed for all of you who have 
+\emph on
+never heard of LaTeX
+\emph default
+, or don't know it very well.
+ Now, don't panic - you won't need to learn LaTeX to use LyX.
+ That is, after all, 
+\emph on
+the whole point of LyX
+\emph default
+: to provide an almost-WYSIWYG interface to LaTeX.
+ There are some things you will need to learn, however, in order to use
+ LyX effectively.
+\end_layout
+
+\begin_layout Subsection
+Essentials of LyX by Stephen Wolff and Liviu Andronic
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "http://wiki.lyx.org/uploads/LyX/tutorials/essentials/LyX_Essentials.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This document is intended to provide an overview of the essential features
+ and functions of LyX, to give you a basic working knowledge of the software,
+ and to enable you to begin typesetting beautiful documents with the powerful
+ LaTeX system.
+ It also discusses some of the more advanced topics and potential issues
+ that you will invariably encounter when creating LyX documents
+\end_layout
+
+\begin_layout Subsection
+LaTeX Style and BiBTeX Bibliography Formats for Biologists: TeX and LaTeX
+ Resources
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www-lmmb.ncifcrf.gov/%7Etoms/latex.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+LaTeX: More Than Just Academic Papers and Theses
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "http://liantze.penguinattack.org/latextypesetting.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lim Lian Tze: 
+\begin_inset Quotes eld
+\end_inset
+
+I prepared these slides for a talk at MOSC2011.
+ It isn’t a tutorial, rather I wanted to give 
+\emph on
+teasers
+\emph default
+ of what LaTeX is capable of beyond the usual journal or conference articles.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Misc
+\end_layout
+
+\begin_layout Subsubsection
+Thesis styles
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "http://wiki.lyx.org/Examples/Thesis"
+
+\end_inset
+
+, although UoT has decided this for you (
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.sgs.utoronto.ca/currentstudents/Pages/Formatting.aspx"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsubsection
+Midnight Radio: How to import a new citation style in LyX
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "http://onthemidnightradio.blogspot.com/2011/02/how-to-import-new-citation-style-in-lyx.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Converting Excel tables into LaTeX tables 
+\end_layout
+
+\begin_layout Standard
+CTAN 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.ctan.org/tex-archive/support/excel2latex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Multiple and sectioned bibliographies
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "http://wiki.lyx.org/BibTeX/Tips#secbib"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+First chapter
+\end_layout
+
+\begin_layout Section
+First section
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:First-section"
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+You could include the label on the same row as the Section, but I remember
+ that with one style there was a conflict with that, and this worked for
+ both templates so I have been doing this now
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That was done by sample citation from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nimmerjahn2015largescale"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+
+\end_layout
+
+\begin_layout Theorem
+You might need to introduce custom hyphenations for some scientific terms
+ that the system do not know how to hyphenate properly, from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{ut-thesis-extra.module}
+\end_layout
+
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Theorem
+\begin_inset listings
+lstparams "basicstyle={\small},breaklines=true,language={[LaTeX]TeX}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+% custom hyphenation patterns
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyphenation{cen-tro-sym-me-tric gra-phe-ne photo-ex-ci-ted pseu-do-ten-sor
+ wave-vec-tor}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+You probably need to add a lot of custom words as well to your Spellchecker.
+ 
+\end_layout
+
+\begin_layout Theorem
+If you have mixed languages, e.g.
+ your default language is English (USA), and then you copy+paste from somewhere
+ text that has English (UK) you get this blue underlining in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Language-conflict"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/languageConflict.png
+	width 60col%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Language conflict (see the blue underline)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Language-conflict"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Standard figure cross-referenced (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:A-standard-figure."
+
+\end_inset
+
+).
+ For everything (sections [e.g.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:First-section"
+
+\end_inset
+
+], subsections, paragraphs, tables, figures, etc.) you have to create 
+\series bold
+labels manually 
+\series default
+so that they can be cross-referenced whereas in Word you could cross-reference
+ directly headings, tables, etc.
+ This is done by 
+\noun on
+Insert - Label
+\noun default
+, and then you can do 
+\noun on
+Insert - Cross-Reference.
+\end_layout
+
+\begin_layout Standard
+Petteri: I typically use 
+\noun on
+Formatted Cross-Reference
+\noun default
+ for all cross-referencing so if you don't like how the formatting is now,
+ you can tweak the Preamble (or in the case of UoT document, there are some
+ definitions in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{ut-thesis-extra.module}
+\end_layout
+
+\end_inset
+
+ and probably UoT wants to have certain way how you cross-reference from
+ text and you can't tweak that for your thesis).
+ Note also that there are 
+\series bold
+ugly bounding boxes 
+\series default
+now around the cross-references and hyperlinks, not sure how UoT wants them
+ to be, but you could tweak the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{hyperref}
+\end_layout
+
+\end_inset
+
+ settings in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{ut-thesis-extra.module}
+\end_layout
+
+\end_inset
+
+ to remove them, see 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://tex.stackexchange.com/questions/823/remove-ugly-borders-around-clickable-cross-references-and-hyperlinks"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+At the moment the ugly bounding boxes are removed with the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{hypersetup}
+\end_layout
+
+\end_inset
+
+ in preamble, otherwise the paragraph above would look like in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Ugly-bounding-boxes"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/uglyBoxes.png
+	width 70col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ugly bounding boxes for cross-references and hyperlinks.
+ Not sure what UoT wants to be used for your thesis (size 70% of column
+ width with no 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{centerline}
+\end_layout
+
+\end_inset
+
+ tag (centers the figure horizontally) 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ugly-bounding-boxes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+A text in a box.
+ A text in a box.
+ A text in a box.
+ A text in a box.
+ A text in a box.
+ A text in a box.
+ A text in a box.
+ A text in a box.
+ A text in a box.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+This you will see in the list of figures
+\end_layout
+
+\end_inset
+
+A standard figure.
+ 
+\series bold
+NOTE! 
+\series default
+This
+\series bold
+ Figure Float 
+\series default
+contains the field 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+Short Title
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+ and its entry to the 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+Table of Figures
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\series default
+does not look as 
+\series bold
+awful 
+\series default
+as it does for some other longer caption Floats
+\series bold
+!
+\series default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:A-standard-figure."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Some text from where you wanna cite Nimmerjahn again maybe 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nimmerjahn2012invivo"
+
+\end_inset
+
+.
+ And if you have multiple citations you can cram them to the same citation
+ 
+\begin_inset Quotes eld
+\end_inset
+
+box
+\begin_inset Quotes erd
+\end_inset
+
+ like 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nimmerjahn2015largescale,nimmerjahn2012invivo"
+
+\end_inset
+
+ (from Zotero you just keep inserting new citations and they be merged to
+ same field if you don't move your cursor meanwhile)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/sampleImage.png
+	lyxscale 50
+	width 60col%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Another standard figure.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Subsection
+\end_layout
+
+\begin_layout Subsubsection
+Subsubsection
+\end_layout
+
+\begin_layout Standard
+Some equation if you want to cite from text, see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sampleEquation"
+
+\end_inset
+
+.
+ When talking about parameters such as 
+\begin_inset Formula $A$
+\end_inset
+
+ you should use the Math mode (Ctrl+M) in text as well to comply with the
+ Math symbols in italics.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{alignat}{1}
+A= & b_{i}\times c^{2}\label{eq:sampleEquation}
+\end{alignat}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Paragraph
+\end_layout
+
+\begin_layout Standard
+I like to personally use 
+\begin_inset Quotes eld
+\end_inset
+
+Branches
+\begin_inset Quotes erd
+\end_inset
+
+ that can contain your 
+\begin_inset Quotes eld
+\end_inset
+
+literature skeleton
+\begin_inset Quotes erd
+\end_inset
+
+ for example for each section / paragraph or however you wanna split them.
+ For example:
+\end_layout
+
+\begin_layout Standard
+Paragraph of previous methods for imaging tumor vasculature ..
+ .continues ..
+ and continues...
+ or it does not continue, but you want to start putting references to your
+ thesis already way before you actually start writing to make the task a
+ lot easier in the end as you slowly pile up references and themes to talk
+ about?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch literature
+status open
+
+\begin_layout Quote
+Citation that you really liked 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "carbary-ganz2015invivo"
+
+\end_inset
+
+, something that contains some parameter estimates that you want to save
+ for further reference, and so that you find it easy again when it is time
+ to write 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "yoon2015invivo"
+
+\end_inset
+
+.
+ Now inside of this branch, we are using 
+\begin_inset Quotes eld
+\end_inset
+
+Quote
+\begin_inset Quotes erd
+\end_inset
+
+ style for example.
+ And you can just deactivate this branch when you are compiling the final
+ PDF to be submitted to UoT or to your supervisor.
+ See e.g.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Deactivating-branches"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quote
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/branches.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Deactivating branches (meaning that they won't be included in the PDF, now
+ the Master is ut-thesis that has the Include of this chapter.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Deactivating-branches"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch comments
+status open
+
+\begin_layout Quotation
+Other branch with 
+\begin_inset Quotes eld
+\end_inset
+
+Quotation
+\begin_inset Quotes erd
+\end_inset
+
+ style that could contain comments about paragraphs that are shorter than
+ literature quotes, that you might want to pass for supervisor but not to
+ UoT.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Subparagraph
+\end_layout
+
+\begin_layout Standard
+More text here with a reference to a table maybe (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Standard-table."
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+This you will see in the list of tables if you don't wanna use really large
+ captions in your table list
+\end_layout
+
+\end_inset
+
+Standard table.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Standard-table."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3a
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3b
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To see the Outline (View - Outline Pane) of all different levels of TOC,
+ drag the slider to the right (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Control-the-outline"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/TOCdepth.png
+	width 75col%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Control the outline depth
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Control-the-outline"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you want to see the LaTeX source while writing, toggle on the Source
+ Pane (View - Source Pane, 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:LaTeX-source-while"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/sourcePane.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+LaTeX source while writing
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:LaTeX-source-while"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you wanna include some Matlab (or whatever language) code to your document,
+ you can 
+\begin_inset Quotes eld
+\end_inset
+
+Include
+\begin_inset Quotes erd
+\end_inset
+
+ it (linking to the file, Insert - File - External Material) rather than
+ copy+paste (which you can do as well, but then you have to do it every
+ time again and again if you change the code).
+ See example: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[language=Matlab]{sampleMatlabFile.m}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lst:MatlabExampleCode"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+And then you want to add the following definition to your Preamble (you
+ can for sure edit it as you wish).
+ 
+\series bold
+Note!
+\series default
+ When pasting TeX definition (e.g.
+ Matlab styling for preamble, 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "alg:matlabStyling"
+
+\end_inset
+
+) or any other multi-line 
+\begin_inset Quotes eld
+\end_inset
+
+non-text
+\begin_inset Quotes erd
+\end_inset
+
+ documents, you should paste it as Plain Text (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{Ctrl+Shift+V}
+\end_layout
+
+\end_inset
+
+ (typewriter/monospaced text with 
+\noun on
+
+\backslash
+texttt{}
+\noun default
+), Paste Special - Plain Text) so that the line changes are not gone)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "basicstyle={\scriptsize},language=TeX"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{listings}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{mylilas}{RGB}{170,55,241}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=Matlab,%
+\end_layout
+
+\begin_layout Plain Layout
+
+    basicstyle=
+\backslash
+scriptsize
+\backslash
+ttfamily,%
+\end_layout
+
+\begin_layout Plain Layout
+
+    breaklines=true,%
+\end_layout
+
+\begin_layout Plain Layout
+
+    morekeywords={matlab2tikz},
+\end_layout
+
+\begin_layout Plain Layout
+
+    keywordstyle=
+\backslash
+color{blue},%
+\end_layout
+
+\begin_layout Plain Layout
+
+    morekeywords=[2]{1}, keywordstyle=[2]{
+\backslash
+color{black}},
+\end_layout
+
+\begin_layout Plain Layout
+
+    identifierstyle=
+\backslash
+color{black},%
+\end_layout
+
+\begin_layout Plain Layout
+
+    stringstyle=
+\backslash
+color{mylilas},
+\end_layout
+
+\begin_layout Plain Layout
+
+    commentstyle=
+\backslash
+color{mygreen},%
+\end_layout
+
+\begin_layout Plain Layout
+
+    showstringspaces=false,%without this there will be a symbol in the places
+ where there is a space
+\end_layout
+
+\begin_layout Plain Layout
+
+    numbers=left,%
+\end_layout
+
+\begin_layout Plain Layout
+
+    numberstyle={
+\backslash
+tiny 
+\backslash
+color{black}},% size of the numbers
+\end_layout
+
+\begin_layout Plain Layout
+
+    numbersep=9pt, % this defines how far the numbers are from the text
+\end_layout
+
+\begin_layout Plain Layout
+
+    emph=[1]{for,end,break},emphstyle=[1]
+\backslash
+color{red}, %some words to emphasise
+\end_layout
+
+\begin_layout Plain Layout
+
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+This is inside an Algorithm Float now, the TeX preamble part for styling
+ your Matlab code (listings).
+ There is also 
+\begin_inset CommandInset href
+LatexCommand href
+name "mcode"
+target "http://www.howtotex.com/tips-tricks/how-to-include-matlab-code-in-latex-documents/"
+
+\end_inset
+
+ package specifically for Matlab code.
+ And then if you start adding 
+\begin_inset CommandInset href
+LatexCommand href
+name "R code"
+target "https://stat.ethz.ch/pipermail/r-help//2012-November/327858.html"
+
+\end_inset
+
+ or something else, you can add definitions of that code to your main preamble
+ (
+\noun on
+ut-thesis.lyx
+\noun default
+ in our case that Includes all the chapters etc.).
+ At the moment this was just copy+pasted to preamble, but you could add
+ it to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{ut-thesis-extra.module}
+\end_layout
+
+\end_inset
+
+ instead of the preamble of 
+\noun on
+ut-thesis.lyx
+\noun default
+.
+ Now also the TeX code styling is manually defined by Right Click - Settings
+ -> for this listing which is kinda cumbersome if you have a lot of listing
+ and you want to have global styling.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(2 
+\begin_inset Formula $\times$
+\end_inset
+
+ forced linechange here, Ctrl+Enter) Likewise you could include 
+\series bold
+LaTeX tables 
+\series default
+in the text that were generated for example by your analysis scripts.
+ That way you could start including your results right away, and if you
+ update your code, get new data, or something that results table would be
+ automagically updated rather than you having to copy+paste it every time
+ as an Excel table or something equally cumbersome.
+ See for example 
+\begin_inset CommandInset href
+LatexCommand href
+name "Contingency tables in R"
+target "http://finzi.psych.upenn.edu/library/openintro/html/contTable.html"
+
+\end_inset
+
+, or use 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{stargazer}
+\end_layout
+
+\end_inset
+
+ for beautiful tables, 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.r-statistics.com/2013/01/stargazer-package-for-beautiful-latex-tables-from-r-statistical-models-output/"
+
+\end_inset
+
+.
+ For Matlab see for example latexTable (
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/eliduenisch/latexTable"
+
+\end_inset
+
+).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:matlabStyling"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Packages
+\end_layout
+
+\begin_layout Standard
+Using packages in LaTeX is a bit similar for example to Python.
+ You first need to have those packages installed on your machine that might
+ not be included in your standard MiKTeX installation.
+ And then you need to explicitly define at the start of your document, which
+ packages you will be using.
+ 
+\end_layout
+
+\begin_layout Standard
+The normal syntax is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small},language=TeX"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{listings}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And you can pass input arguments inside 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{[]}
+\end_layout
+
+\end_inset
+
+ for example:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small},language=TeX"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+usepackage[hidelinks]{hyperref}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And after the import you can normally set the parameters still, like with
+ this template the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{hyperref}
+\end_layout
+
+\end_inset
+
+ (that package styles how all the cross-references and citations from the
+ text look) is tweaked with the following line in the preamble of the master:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small},language=TeX"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hypersetup{hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=fa
+lse,breaklinks=true,urlcolor= blue,bookmarks=true,bookmarksopen=false,pdftitle={
+book title},pdfauthor={book author}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tips
+\end_layout
+
+\begin_layout Subsubsection*
+Compiling often
+\end_layout
+
+\begin_layout Standard
+Try to compile to PDF rather frequently to make sure that you don't add
+ anything weird.
+ If you just write the whole day and compile once-a-day it is harder to
+ figure out what you did wrong to cause some PDF compilation error (e.g.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Compilation-error"
+
+\end_inset
+
+) instead of compiling many times a day.
+ Especially important if you are a beginner with the software.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/compileError.png
+	lyxscale 50
+	width 70col%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/compileErrorFixed.png
+	lyxscale 50
+	width 70col%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+(top) 
+\series default
+Compilation error.
+ 
+\series bold
+(bottom) 
+\series default
+Error fixed as the 
+\begin_inset Quotes eld
+\end_inset
+
+
+\backslash
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+ in LaTeX means line change, and 
+\begin_inset Quotes eld
+\end_inset
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+ is used as a TeX tag.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Compilation-error"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Advanced replace
+\end_layout
+
+\begin_layout Standard
+You can also do 
+\begin_inset Quotes eld
+\end_inset
+
+Replace
+\begin_inset Quotes erd
+\end_inset
+
+ with styling, or replace all 
+\begin_inset Quotes eld
+\end_inset
+
+textual
+\begin_inset Quotes erd
+\end_inset
+
+ greek letters to LaTeX notations, etc with Edit - Find & Replace (Advanced)
+ for changing all non-italic 
+\noun on
+et al.
+ 
+\noun default
+instances to italic 
+\emph on
+\noun on
+et al.
+ 
+\emph default
+\noun default
+for example
+\emph on
+\noun on
+ (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:ReplaceAdvanced"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/advancedReplace.png
+	lyxscale 67
+	width 33col%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/advancedReplace2.png
+	lyxscale 50
+	width 66col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+(left) 
+\series default
+Replacing so that only the styling is changed, 
+\series bold
+(right) 
+\series default
+Replacing 
+\begin_inset Quotes eld
+\end_inset
+
+non-TeX
+\begin_inset Quotes erd
+\end_inset
+
+-formatted characters to more TeX-compatible format to be compatible with
+ journal submissions for example.
+ If you are only compiling to PDF by yourself the LyX-formatted superscript
+ still works okay but not might be supported by TeX->PDF engines used by
+ publishers.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ReplaceAdvanced"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Version control with git
+\end_layout
+
+\begin_layout Standard
+If you like, you can do version control with Git () that some people found
+ useful when writing their theses, e.g.
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "Using Git for writing thesis [StackOverflow]"
+target "http://stackoverflow.com/questions/7775881/using-git-for-writing-thesis"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset href
+LatexCommand href
+name "How do I use Git in LyX 2.1 (Quora)?"
+target "https://www.quora.com/How-do-I-use-Git-in-LyX-2-1"
+
+\end_inset
+
+.
+ Might be useful practice to use Git with your thesis as well if you are
+ developing code as well and you have been thinking of being more organized
+ and starting to push your code to GitHub for example (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dabbish2012socialcoding,lima2014codingtogether"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/versionControl.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Version control with Git integrated to LyX so you do not need necessarily
+ an external program such as Git Cola, or plain terminal calls.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Troubleshooting
+\end_layout
+
+\begin_layout Standard
+You can do 
+\begin_inset Quotes eld
+\end_inset
+
+headings
+\begin_inset Quotes erd
+\end_inset
+
+ with no numbering using the unnumbered section in styles (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Using-unnumbered-headings."
+
+\end_inset
+
+) marked with *
+\series bold
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/unnumbered.png
+	lyxscale 50
+	width 60col%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Using unnumbered headings.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Using-unnumbered-headings."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Missing bibliographic entry
+\end_layout
+
+\begin_layout Standard
+If you get problems with bibliography, and some entry is not found, you
+ will get a 
+\series bold
+\noun on
+?
+\series default
+\noun default
+ in the text (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Bibliography-entry-missing."
+
+\end_inset
+
+) as LyX cannot found that bibliographic entry from the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{.bib}
+\end_layout
+
+\end_inset
+
+ file.
+ In practice this is probably due to same change in database and you need
+ to run 
+\begin_inset Quotes eld
+\end_inset
+
+Update BibTeX
+\begin_inset Quotes erd
+\end_inset
+
+ in LyZ if you try to insert the same citation again.
+ Other possible scenario is that if you keep your Zotero database in Dropbox,
+ the Dropbox have not synced (and 
+\series bold
+\emph on
+downloaded
+\series default
+) 
+\emph default
+yet when you for example open the Zotero at home to continue writing.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/biblioProblem.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bibliography entry missing.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bibliography-entry-missing."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Can't write to file
+\end_layout
+
+\begin_layout Standard
+Might happen if you are running out of RAM (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:I-can't-write"
+
+\end_inset
+
+), 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://tex.stackexchange.com/questions/16801/xelatex-i-cant-write-on-file-test-pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/cantWriteOnFile.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\noun on
+I can't write on file 
+\noun default
+-problem.
+ Probably due to insufficient RAM.
+ Closing and re-opening LyX allowed PDF to be generated.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:I-can't-write"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

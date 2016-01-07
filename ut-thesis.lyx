@@ -1,0 +1,590 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass ut-thesis
+\begin_preamble
+%%%%%%%%%%%%         PREAMBLE         %%%%%%%%%%%%
+
+%%  - Default settings format a final copy (single-sided, normal
+%%    margins, one-and-a-half-spaced with single-spaced notes).
+%%  - For a rough copy (double-sided, normal margins, double-spaced,
+%%    with the word "DRAFT" printed at each corner of every page), use
+%%    the `draft' option.
+%%  - The default global line spacing can be changed with one of the
+%%    options `singlespaced', `onehalfspaced', or `doublespaced'.
+%%  - Footnotes and marginal notes are all single-spaced by default, but
+%%    can be made to have the same spacing as the rest of the document
+%%    by using the option `standardspacednotes'.
+%%  - The size of the margins can be changed with one of the options:
+%%     . `narrowmargins' (1 1/4" left, 3/4" others),
+%%     . `normalmargins' (1 1/4" left, 1" others),
+%%     . `widemargins' (1 1/4" all),
+%%     . `extrawidemargins' (1 1/2" all).
+%%  - The pagestyle of "cleared" pages (empty pages inserted in
+%%    two-sided documents to put the next page on the right-hand side)
+%%    can be set with one of the options `cleardoublepagestyleempty',
+%%    `cleardoublepagestyleplain', or `cleardoublepagestylestandard'.
+%%  - Any other standard option for the `report' document class can be
+%%    used to override the default or draft settings (such as `10pt',
+%%    `11pt', `12pt'), and standard LaTeX packages can be used to
+%%    further customize the layout and/or formatting of the document.
+
+%% *** Add any desired options. ***
+% \documentclass{ut-thesis}
+
+%% *** Add \usepackage declarations here. ***
+%% The standard packages `geometry' and `setspace' are already loaded by
+%% `ut-thesis' -- see their documentation for details of the features
+%% they provide.  In particular, you may use the \geometry command here
+%% to adjust the margins if none of the ut-thesis options are suitable
+%% (see the `geometry' package for details).  You may also use the
+%% \setstretch command to set the line spacing to a value other than
+%% single, one-and-a-half, or double spaced (see the `setspace' package
+%% for details).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                    %%
+%%                   ***   I M P O R T A N T   ***                    %%
+%%                                                                    %%
+%%  Fill in the following fields with the required information:       %%
+%%   - \degree{...}       name of the degree obtained                 %%
+%%   - \department{...}   name of the graduate department             %%
+%%   - \gradyear{...}     year of graduation                          %%
+%%   - \author{...}       name of the author                          %%
+%%   - \title{...}        title of the thesis                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% *** Change this example to appropriate values. ***
+\degree{Master of Science}
+\department{Biology}
+\gradyear{2016}
+\author{Petteri Teikari}
+\title{UT-Thesis Class File Example}
+
+%% *** NOTE ***
+%% Put here all other formatting commands that belong in the preamble.
+%% In particular, you should put all of your \newcommand's,
+%% \newenvironment's, \newtheorem's, etc. (in other words, all the
+%% global definitions that you will need throughout your thesis) in a
+%% separate file and use "\input{filename}" to input it here.
+
+
+%% *** Adjust the following settings as desired. ***
+
+%% List only down to subsections in the table of contents;
+%% 0=chapter, 1=section, 2=subsection, 3=subsubsection, etc.
+\setcounter{tocdepth}{2}
+
+%% Make each page fill up the entire page.
+\flushbottom
+
+% Added by Petteri
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+\lstset{language=Matlab,%
+    basicstyle=\scriptsize\ttfamily,%
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+% http://latex-community.org/forum/viewtopic.php?f=59&t=25733
+\hypersetup{hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor= blue,bookmarks=true,bookmarksopen=false,pdftitle={book title},pdfauthor={book author}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Begin Preliminary
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "http://theorie.physik.uni-konstanz.de/jrioux/lyx/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+original TeX template from: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.ctan.org/tex-archive/macros/latex/contrib/ut-thesis/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+see also: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.sgs.utoronto.ca/currentstudents/Pages/Formatting.aspx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Title: LyX basic functionality
+\end_layout
+
+\begin_layout Author
+Author: Petteri Teikari
+\end_layout
+
+\begin_layout Date
+2015
+\end_layout
+
+\begin_layout Degree
+Master in LaTeX/LyX
+\end_layout
+
+\begin_layout Department
+Computer Software Tutorials
+\end_layout
+
+\begin_layout Abstract
+*** Put your Abstract here.
+ *** (At most 150 words for M.Sc.
+ or 350 words for Ph.D.)
+\end_layout
+
+\begin_layout Abstract
+
+\series bold
+Note! The fields for the very first page are defined in the preamble of
+ 
+\noun on
+ut-thesis.lyx
+\noun default
+ 
+\end_layout
+
+\begin_layout Abstract
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/preamble.png
+	lyxscale 50
+	width 60col%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Preamble defining name, department, graduation year, etc.
+ (Document -> Settings)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Dedication
+*** Put your Dedication here.
+ ***
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Acknowledgements
+Additional software recommended by Petteri:
+\end_layout
+
+\begin_layout Itemize
+Zotero, 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.zotero.org/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+LyZ Firefox plugin for Zotero, 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://addons.mozilla.org/en-US/firefox/addon/lyz/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout End Preliminary
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+INSERT YOUR CHAPTERS HERE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset CommandInset include
+LatexCommand include
+filename "ch1.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Original definition of bibliography:
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset include
+LatexCommand include
+filename "biblio.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Now the reference style is 
+\begin_inset Quotes eld
+\end_inset
+
+plain
+\begin_inset Quotes erd
+\end_inset
+
+ (probably UoT's default then?).
+ Also now the biblio is defined by the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{.bib}
+\end_layout
+
+\end_inset
+
+ file (Bibtex, see e.g.
+ 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.latex-tutorial.com/tutorials/beginners/latex-bibtex/"
+
+\end_inset
+
+) rather than by the inflexible static key-style entry of the original template.
+ You can also convert the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{.bib}
+\end_layout
+
+\end_inset
+
+ file eventually to the static 
+\begin_inset Quotes eld
+\end_inset
+
+key
+\begin_inset Quotes erd
+\end_inset
+
+-format as most of the journals do not accept the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{.bib}
+\end_layout
+
+\end_inset
+
+ way to do it (see e.g.
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "Converting bibtext to bibitem"
+target "http://tex.stackexchange.com/questions/124874/converting-to-bibitem-in-latex"
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{.bbl}
+\end_layout
+
+\end_inset
+
+ file).
+ In practice now you could define easily the formatting of your references
+ by the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{.bst}
+\end_layout
+
+\end_inset
+
+ file (see e.g.
+\begin_inset CommandInset href
+LatexCommand href
+name " LaTeX Style and BiBTeX Bibliography Formats for Biologists: TeX and LaTeX Resources"
+target "https://schneider.ncifcrf.gov/latex.html"
+
+\end_inset
+
+) rather than having to manually change all your references to match the
+ different requirements of different journals.
+ And if you are using Zotero, you should fix possibly erroneous entries
+ there, and then run 
+\noun on
+
+\begin_inset Quotes eld
+\end_inset
+
+Update BibTeX
+\begin_inset Quotes erd
+\end_inset
+
+
+\noun default
+ from your LyZ plugin.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "charThesis"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
