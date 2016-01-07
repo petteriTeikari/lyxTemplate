@@ -1,3 +1,18 @@
+# LyX tutorial 
+
+Modified from Francois Pitt's LyX template that conform the guidelines of the School of Graduate Studies at the University of
+Toronto (as of 2008).  [http://www.sgs.utoronto.ca/informationfor/+
+students/finup/producingthesis/formatting.htm]
+
+## Instruction how to use
+
+* Clone this repository (you need **all** the files of this repository), e.g. `https://github.com/petteriTeikari/lyxTemplate.git` or just download the .ZIP if you are not familiar with Git protocol
+* Open `ut-thesis.lyx` which is the "main file" having links to all your different chapters
+* `ch1.lyx` is a sample chapter containing typical operations that you might need when writing a thesis or an article.
+* Open `ut-thesis.pdf` to see the PDF output of the whole "thesis"
+
+# Original version history
+
 LaTeX2e document class and template for graduate theses that conform to
 the guidelines of the School of Graduate Studies at the University of
 Toronto (as of 2008).  [http://www.sgs.utoronto.ca/informationfor/+
