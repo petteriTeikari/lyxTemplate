@@ -10,6 +10,7 @@ students/finup/producingthesis/formatting.htm]
 * Open `ut-thesis.lyx` which is the "main file" having links to all your different chapters
 * `ch1.lyx` is a sample chapter containing typical operations that you might need when writing a thesis or an article.
 * Open `ut-thesis.pdf` to see the PDF output of the whole "thesis"
+* Current version uses a bibliography file (`.bib`) that is synced to my Zotero bibliography database so when starting your own project, you want to start from a scratch your bibliography.
 
 # Original version history
 
